@@ -1,6 +1,6 @@
 <?php 
 	/*
-	 url exmaple 
+	 url example : 
 		 send 			>> http://domain.com?mode=kirim&value=999
 		 read all 		>> http://domain.com?mode=terimaAll
 		 read currently >> http://domain.com?mode=terimaCurr

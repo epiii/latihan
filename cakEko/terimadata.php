@@ -8,7 +8,7 @@
 	require"dbconnect.php";
 	$out='';
 	if(isset($_GET['mode']=='kirim')){ // insert 
-		$sql='INSERT INTO  tb_anu set val='.$_GET['value'];
+		$sql='INSERT INTO  tb_anu set val="'.$_GET['value'].'"';
 		$exe=mysqli_query($sql);
 		$out=array('msg'=>'send_mode',($exe?'insert_successfuly':'insert_error'));
 	}elseif($_GET['mode']=='terimaAll'){ //read all
